@@ -1,3 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  @apply max-w-6xl mx-auto px-5;
+}
+
+/* Header */
+.header__navbar .container {
+  @apply flex justify-around;
+}
+
+.header__navbar--logo {
+  @apply text-2xl font-bold;
+}
+
+.header__navbar--logo span {
+  @apply text-[#F99D18];
+}
+
+.header__navbar--menu ul {
+  @apply flex space-x-[42px] active:text-[#F99D18];
+}
+
+.btn {
+  @apply inline-block bg-[#F99D18] py-3 px-10 text-white;
+}
