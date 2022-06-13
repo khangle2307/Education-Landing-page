@@ -94,3 +94,84 @@ body {
 .hero__brand--logo {
   @apply flex gap-[26px];
 }
+
+/* Courses */
+.course {
+  @apply py-[170px];
+}
+
+.course__header {
+  @apply flex justify-between items-center;
+}
+
+.course__header--title {
+  @apply text-4xl font-bold w-[470px];
+}
+
+.course__header--desc {
+  @apply w-[470px];
+}
+
+.course__header--button {
+  @apply flex gap-4;
+}
+
+.arrow__button {
+  @apply py-[14px] px-[18px];
+}
+
+.course__button--prev {
+  @apply border-[1px] border-[#F99D18];
+}
+
+.course__button--next {
+  @apply bg-[#F99D18];
+}
+
+.course__list {
+  @apply grid grid-cols-4 gap-[30px] py-[50px];
+}
+
+.course__item {
+  @apply bg-white;
+}
+
+.course__item--body {
+  @apply p-4;
+}
+
+.course__item--title {
+  @apply text-base font-semibold;
+}
+
+.course__item--desc {
+  @apply text-sm text-[#615D57] py-[6px];
+}
+
+.course__item--rating {
+  @apply flex items-center py-4;
+}
+
+.course__rating--icon {
+  @apply flex gap-1;
+}
+
+.course__rating--icon img {
+  @apply w-4;
+}
+
+.course__rating--quatity {
+  @apply text-sm font-semibold px-[6px];
+}
+
+.course__rating--quantity {
+  @apply text-sm font-semibold text-[#615D57];
+}
+
+.course__item--enroll {
+  @apply flex gap-2;
+}
+
+.course__enroll--name {
+  @apply text-base font-bold cursor-pointer;
+}
