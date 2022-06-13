@@ -26,7 +26,7 @@ const Navbar = () => {
             </li>
           </ul>
         </nav>
-        <a href="#" className="btn">
+        <a href="#" className="btn btn__primary">
           Sign Up
         </a>
       </div>

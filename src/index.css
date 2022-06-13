@@ -6,18 +6,31 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-
 .container {
   @apply max-w-6xl mx-auto px-5;
 }
 
+/* Button */
+
+.btn__primary {
+  @apply bg-[#F99D18];
+}
+
+.btn__outline {
+  @apply border-solid border-2 border-[#CEC7BD];
+}
+
+.btn {
+  @apply inline-block py-3 px-10 text-white;
+}
+
 /* Header */
 .header__navbar .container {
-  @apply flex justify-around;
+  @apply flex justify-between items-center py-9;
 }
 
 .header__navbar--logo {
-  @apply text-2xl font-bold;
+  @apply text-2xl text-white font-bold;
 }
 
 .header__navbar--logo span {
@@ -25,9 +38,59 @@ body {
 }
 
 .header__navbar--menu ul {
-  @apply flex space-x-[42px] active:text-[#F99D18];
+  @apply flex space-x-[42px] text-white active:text-[#F99D18];
 }
 
-.btn {
-  @apply inline-block bg-[#F99D18] py-3 px-10 text-white;
+/* Hero */
+.hero .container {
+  @apply flex text-white items-center gap-[130px];
+}
+
+.hero__video {
+  @apply relative;
+}
+
+.hero__video--play {
+  @apply absolute top-1/2 right-1/2 translate-x-[50%] translate-y-[-63px] 
+  bg-white rounded-full hidden group-hover:block ease-in duration-500;
+}
+
+.hero__video--icon {
+  @apply p-[62px];
+}
+
+.hero__content {
+  @apply max-w-lg;
+}
+
+.hero__content--title {
+  @apply text-[62px] font-bold leading-[72px];
+}
+
+.hero__content--desc {
+  @apply text-lg py-9;
+}
+
+.hero__content--button {
+  @apply space-x-[22px];
+}
+
+.hero__content--brand {
+  @apply my-[70px];
+}
+
+.hero__brand--title {
+  @apply w-[230px] text-sm text-[#CEC7BD];
+}
+
+.hero__brand--count {
+  @apply text-white;
+}
+
+.hero__brand--slash {
+  @apply py-[13px] text-[#706A63] px-[50px];
+}
+
+.hero__brand--logo {
+  @apply flex gap-[26px];
 }
